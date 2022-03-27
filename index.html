@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonte dos Google Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Calculadora Inteligente da Nasa</h1>
+    <form name="calcform" method="post" action="">
+      <fieldset>
+        <legend>Calculadora NASA</legend>
+
+        <label for="valor1">Digite o valor <strong>1</strong>:</label>
+        <input type="text" name="valor1" id="valor1" />
+
+        <label for="valor2">Digite o valor <strong>2</strong>:</label>
+        <input type="text" name="valor2" id="valor2" />
+
+        <label for="oper">Selecione a operação:</label>
+        <select name="oper" id="oper">
+          <option value="somar">Somar</option>
+          <option value="subtrair">Subtrair</option>
+          <option value="multiplicar">Multiplifcar</option>
+          <option value="dividir">Dividir</option>
+        </select>
+
+        <label for="res">Resultado:</label>
+        <input type="text" name="res" id="res" />
+
+        <input
+          type="button"
+          value="Calcular"
+          class="botao"
+          onClick="calcular(document.calcform.oper.value)"
+        />
+      </fieldset>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
