@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #121214;
+}
+
+h1 {
+  margin: 1rem;
+  padding: 0.5rem;
+  background: #222;
+  border-radius: 3px;
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+form fieldset {
+  margin: 10px auto 10px auto;
+  width: 40%;
+  border: solid #111 1px;
+  padding: 3%;
+  background: #222;
+  color: white;
+  border-radius: 5px;
+}
+
+form legend {
+  padding: 6px;
+  margin: 10px;
+  border: solid #222 1px;
+  font-size: 90%;
+  font-weight: bold;
+  background-color: #111;
+}
+
+form label {
+  display: block;
+  font-size: 11px;
+}
+
+form input {
+  width: 100%;
+  border: solid #ccc 1px;
+  font-size: 11px;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+
+form input.botao {
+  display: block;
+  width: auto;
+  float: right;
+}
+
+@media (max-width: 600px) {
+  form fieldset {
+    width: 90%;
+  }
+}
